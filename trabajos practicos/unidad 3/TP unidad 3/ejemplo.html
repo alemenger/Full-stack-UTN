@@ -29,15 +29,65 @@
         <li>Little Miss Sunshine</li>
         <li>As Good as It Gets</li>
     </ul>
+    <h3>Mi canción favorita</h3>
+    <audio src="cancionFavorita.mp3" controls></audio>
+
     <h3>Perfil</h3>
-    <p> Aprender cosas  relacionadas con la programación.
+    <p> Aprender cosas relacionadas con la programación.
     </p>
     <p>
-     Mirar series y películas 
+        Mirar series y películas
     </p>
     <p>
-    Cocinar y hacer deportes
+        Cocinar y hacer deportes
     </p>
+    <h3> Formulario de contacto </h3>
+    <form action="" method="">
+ <p>
+     <label for="nom">Nombre</label>
+     <input type="text" name="Nombre"/>
+ </p>
+ <p>
+     <input type="text" name="apellido" placeholder="apellido">
+</p>
+ <p>
+     <label for="pass">Contraseña</label>
+     <input type= "password" name="pass" />
+</p>   
+     <label for="sexo">Sexo</label>
+        <ul>
+            <li>
+                <input type="radio" name="sexo" value="hombre">
+                <label>Hombre</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" value="mujer">
+                <label>Mujer</label>
+            </li>
+        </ul>
+        <label> HObbies</label> 
+        <ul>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="bailar" id="bailar"/>
+                <label for="bailar">Bailar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="cantar" id="cantar"/>
+                <label for="cantar">Cantar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="nadar" id="nadar"/>
+                <label for="nadar">Nadar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="correr" id="correr"/>
+                <label for="correr">Correr</label>
+            </li>
+        </ul>    
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+</p>        
 
 </body>
 
