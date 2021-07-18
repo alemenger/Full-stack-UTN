@@ -1,0 +1,25 @@
+h1{
+ background-color: crimson;
+ color: rgb(255, 255, 255);
+ font-size:  50px;
+ margin-left: 30px;
+ padding-left: 30px;
+
+}
+
+.foto{
+    border:10px solid black;
+    border-radius: 80px 0px;
+    box-shadow: -25px 20px 15px 5px rgb(33, 228, 33);
+    margin-left: 20px;
+ }
+
+.caja{
+    background-color: yellow;
+    column-count: 10 ; /*cantidad de columnas*/
+    column-gap: 50px;  /*espacio entre columna y columna */
+    column-rule: 5px solid red;
+.caja p{
+    margin: 0;
+}
+} 
