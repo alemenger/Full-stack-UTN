@@ -1,0 +1,85 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+body{
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header{
+    background-color: #f8f8f8;
+    padding: 1em 0;
+}
+
+header h1{
+    color: rgb(251, 0, 0);
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-flex;
+    position: relative;
+  
+}
+
+
+
+nav{
+    background-color: #fd3535;
+    margin-bottom: 2em;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color:#ccc;
+    clear: both;
+    color:#333;
+    padding: 3em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+nav ul li a.activo{
+    background-color: #000000;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+h2 {
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em;
+}
+
+body.custom-background {
+    background-image: url(http://www.ifts11.com/wp/wp-content/plugins/one-page-express-companion/theme-data/one-page-express/sections/images/Travel_through_New_York_wallpaper-1920x1200.jpg);
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
