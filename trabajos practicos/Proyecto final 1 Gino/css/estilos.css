@@ -1,85 +1,145 @@
-/* font-family: 'Open Sans', sans-serif; */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body{
-    font-family: 'Open Sans', sans-serif ;
-    font-size: 16px;
-    line-height: 20px;
+    font-family: sans-serif;
+    padding: 90px 20px 0;
 }
 
-header{
-    background-color: #f8f8f8;
-    padding: 1em 0;
+.header{
+    background-color: rgb(250, 0, 0);
+    border-color: blue;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
 }
 
-header h1{
-    color: rgb(251, 0, 0);
-    font-size: 2.5em;
-    font-style: italic;
-    font-weight: 100;
-    display: inline-flex;
-    position: relative;
-  
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
 }
 
-
-
-nav{
-    background-color: #fd3535;
-    margin-bottom: 2em;
-}
-
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    width: 16.3%;
-}
-
-nav ul li a{
+.nav-link {
     color: white;
     text-decoration: none;
-    text-align: center;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;    
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background-color: rgb(60, 0, 255);
+    transition: 0.5s;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;   
+    cursor: pointer;
+}
+/* //////////////////////////////////////////////// */
+@media (max-width: 768px){
+    body{
+        font-family: sans-serif;
+        padding-top: 70px 20px 0;
+    }
+    
+    .header{
+        background-color: rgb(19, 187, 253);
+        height: 60px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left:0;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    
+    .nav-link {
+        color: white;
+        text-decoration: none;
+    }
+    .logo {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    .nav-menu{
+  flex-direction: column;
+  align-items: center;
+        margin-right: 20px;
+    background-color: blueviolet;  
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+          
+        line-height: 70px;
+     
+    }
+    
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background-color:none;
+     color:cyan
+}
+
+.nav-toggle{
     display: block;
-    padding: 0.2em 0.4em;
 }
-
-nav ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+.nav-menu_visible{
+left: 0;
 }
-
-footer {
-    background-color:#ccc;
-    clear: both;
-    color:#333;
-    padding: 3em 0;
-    margin-top: 2em;
-    text-align: center;
+.nav-toggle:focus:not(:focus-visible){
+    outline: none;
 }
-
-nav ul li a.activo{
-    background-color: #000000;
-}
-
-.holder{
-    max-width: 960px;
-    margin: 0 auto;
-    /* background-color: red; */
-}
-
-h2 {
-    color: #2e64a1;
-    font-weight: 400;
-    margin: 0 0 1em;
-}
-
-body.custom-background {
-    background-image: url(http://www.ifts11.com/wp/wp-content/plugins/one-page-express-companion/theme-data/one-page-express/sections/images/Travel_through_New_York_wallpaper-1920x1200.jpg);
-    background-position: center top;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
