@@ -1,9 +1,9 @@
 import react from 'react';
-
+import '../../styles/components/layout/Footer.css';
 const Footer = (props) => {
     return (
       <footer>
-        <p>Derechos resevados. Transportes X Año 2021</p>        
+        <p>Realizado por Ale Mendoza Gertie &copy; 2021</p>      
       </footer>
     );
 }

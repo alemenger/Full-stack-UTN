@@ -1,9 +1,10 @@
 import React from 'react';
+import '../styles/components/pages/ContactoPage.css'
 
 const ContactoPage = (props) => {
    return (
       <main className="holder">
-         <div className="columna contacto">
+         <div className="columna left">
             <h2>Complete el siguiente formulario</h2>
             <form action="" method="" className="formulario">
                <p>
@@ -27,7 +28,7 @@ const ContactoPage = (props) => {
             </form>
          </div>
 
-         <div className="columna datos">
+         <div className="columna right">
             <h2>Otras vías de contacto</h2>
             <p>También puede contactarse con nosotros usando los
                siguientes medios:

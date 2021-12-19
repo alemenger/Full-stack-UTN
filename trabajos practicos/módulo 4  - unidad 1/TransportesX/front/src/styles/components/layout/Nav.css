@@ -1,17 +1,32 @@
-body{
-    font-family: 'Open Sans', sans-serif ;
-    font-size: 16px;
-    line-height: 20px;
+
+nav{
+    background-color: #6da9ed;
+    margin-bottom: 2em;
 }
 
-.holder{
-    max-width: 960px;
-    margin: 0 auto;
-    /* background-color: red; */
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    color: #2e64a1;
-    font-weight: 400;
-    margin: 0 0 1em;
+nav ul li {
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a.activo{
+    background-color: #4c76a5;
 }

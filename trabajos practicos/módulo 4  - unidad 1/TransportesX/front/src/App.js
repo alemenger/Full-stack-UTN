@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //import logo from './logo.svg';
-//import './App.css';
+import './App.css';
 import ContactoPage from'./pages/ContactoPage';
 import HomePage from './pages/HomePage';
 import NosotrosPage from './pages/NosotrosPage';
